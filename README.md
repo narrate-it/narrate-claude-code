@@ -2,38 +2,27 @@
 
 Claude Code MCP prompts for consequential narration.
 
-This repo exposes two prompts:
-
-- `narrate` for a short, one-shot update
-- `stream` for long-running work that deserves periodic narration
-
 ## Install
 
-Run `./install.sh` from this repo:
+Run:
 
 ```sh
 ./install.sh
 ```
 
-The script installs dependencies and registers the local MCP server with
-Claude Code. Once connected, the prompts show up as slash commands with the
-MCP prefix.
+That adds the marketplace and installs the plugin. Once connected, the prompts
+show up as slash commands.
 
-## What the prompts say
+## Prompts
 
-`narrate` tells the agent to:
+`narrate`:
 
 - report the current phase
 - explain why that phase matters
 - mention the next consequential step
 
-`stream` tells the agent to:
+`stream`:
 
 - keep the narration short
 - update on phase changes, retries, blockers, and completion
 - avoid secrets, raw diffs, and low-value implementation detail
-
-## Why this repo exists
-
-The goal is to make narration opt-in and high signal. The agent should speak
-when the work matters, not narrate every token of implementation detail.

@@ -1,5 +1,5 @@
 #!/bin/sh
 set -eu
 
-npm install
-claude mcp add narrate --scope user -- npm run mcp
+claude plugin marketplace add narrate-it/narrate-claude-code
+claude plugin install narrate@narrate-claude-code
