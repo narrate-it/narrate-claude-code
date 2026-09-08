@@ -9,15 +9,15 @@ This repo exposes two prompts:
 
 ## Install
 
-Run the MCP server from `package.json`:
+Run `./install.sh` from this repo:
 
 ```sh
-npm install
-npm run mcp
+./install.sh
 ```
 
-Then add it to Claude Code as a local MCP server. Once connected, the prompts
-show up as slash commands with the MCP prefix.
+The script installs dependencies and registers the local MCP server with
+Claude Code. Once connected, the prompts show up as slash commands with the
+MCP prefix.
 
 ## What the prompts say
 
